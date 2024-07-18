@@ -1,13 +1,14 @@
-const generateQuestions = async (pdfUrl) => {
-    // Implement AI logic to generate questions from PDF
-    // This is a placeholder and should be replaced with actual AI integration
-    return [
+// This is a placeholder. You'll need to implement actual AI logic here.
+const generateQuestions = async (pdfContent) => {
+  // Implement AI logic to generate questions from PDF content
+  return [
       {
-        question: "Sample question?",
-        options: ["Option A", "Option B", "Option C", "Option D"],
-        correctAnswer: 0
+          question: "Sample question?",
+          options: ["Option A", "Option B", "Option C", "Option D"],
+          correctAnswer: 0
       }
-    ];
-  };
-  
-  module.exports = { generateQuestions };
+      // Generate more questions here
+  ];
+};
+
+module.exports = { generateQuestions };
