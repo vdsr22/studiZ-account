@@ -6,13 +6,33 @@
     <title>My Account - StudiZ</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
+<body class="account-page">
+    <header>
         <h1>StudiZ</h1>
-        <h2>My Account</h2>
         <div id="userInfo"></div>
-        <button id="settingsBtn">Settings</button>
         <button id="logoutBtn">Logout</button>
+    </header>
+    <main>
+        <div class="study-sessions">
+            <div class="left-panel">
+                <h2>Study Sessions</h2>
+                <button id="createSessionBtn">Create New Study Session</button>
+            </div>
+            <div class="right-panel">
+                <h3>Your Study Sessions</h3>
+                <div id="sessionList"></div>
+            </div>
+        </div>
+    </main>
+    <div id="createSessionModal" class="modal">
+        <div class="modal-content">
+            <h2>Create New Study Session</h2>
+            <form id="createSessionForm">
+                <input type="text" id="sessionName" placeholder="Session Name" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <button type="submit">Create Session</button>
+            </form>
+        </div>
     </div>
     <script src="account.js"></script>
 </body>
