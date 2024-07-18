@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     guestLoginBtn.addEventListener('click', () => {
-        document.cookie = "guestSession=true; max-age=3600"; // Expires in 1 hour
+        document.cookie = "guestSession=true; max-age=360000"; // Expires in 1 hour
         window.location.href = 'guest.html';
     });
 
